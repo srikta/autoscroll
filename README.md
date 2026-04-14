@@ -18,13 +18,8 @@ A simple, distraction-free web app that automatically scrolls chords and lyrics 
 
 ## 🖥️ Demo
 
-> (Add your GitHub Pages link here after deployment)
+> https://srikta.github.io/autoscroll/
 
----
-
-## 📸 Preview
-
-<img src="preview.png" alt="AutoScroll UI" width="100%" />
 
 ---
 
@@ -75,7 +70,7 @@ AutoScroll/
 Your site will be live at:
 
 ```
-https://your-username.github.io/repo-name/
+https://your-username.github.io/repo-name
 ```
 
 ---
