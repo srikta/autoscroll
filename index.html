@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AutoScroll</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body class="dark">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="zoom-header">
+        <button id="zoomOutBtn">−</button>
+        <button id="zoomInBtn">+</button>
+      </div>
+
+      <h1 class="title">AutoScroll</h1>
+
+      <div class="theme-control">
+        <label><input type="radio" name="theme" value="light" /> Light</label>
+        <label
+          ><input type="radio" name="theme" value="dark" checked /> Dark</label
+        >
+      </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-section" id="inputSection">
+      <textarea
+        id="chordInput"
+        placeholder="Paste your chords and lyrics here..."
+      ></textarea>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+      <button id="loadBtn">Load</button>
+      <button id="editBtn">Edit</button>
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- CONTROL BAR -->
+    <div class="control-bar">
+      <!-- SPEED -->
+      <div class="speed-control">
+        <label>Speed:</label>
+        <input type="range" id="speedSlider" min="1" max="10" value="2" />
+      </div>
+
+      <!-- DELAY -->
+      <div class="delay-control">
+        <label>Delay:</label>
+        <input type="range" id="delaySlider" min="5" max="15" value="10" />
+        <span id="delayValue">10s</span>
+      </div>
+    </div>
+
+    <!-- DISPLAY -->
+    <div id="displayContainer">
+      <div id="displayText"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
